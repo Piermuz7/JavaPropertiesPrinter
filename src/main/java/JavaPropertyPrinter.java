@@ -44,13 +44,13 @@ public class JavaPropertyPrinter {
     }
 
     private static void splittedStringBy(char separator, String s) {
-        String str = "";
+        StringBuilder str = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == separator) {
                 System.out.println(str);
-                str = "";
+                str = new StringBuilder();
             } else
-                str += s.charAt(i);
+                str.append(s.charAt(i));
         }
     }
 
