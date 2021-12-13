@@ -8,7 +8,7 @@
  * @see java.util.Properties#getProperty(String, String)
  * @see System#getProperties()
  */
-public class JavaPropertyPrinter {
+public class JavaPropertiesPrinter {
     public static void main(String[] args) {
         System.out.println("JRE version: " + System.getProperty("java.version"));
         System.out.println("Java Runtime Version: " + System.getProperty("java.runtime.version"));
